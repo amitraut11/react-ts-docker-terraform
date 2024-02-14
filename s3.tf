@@ -8,3 +8,9 @@ resource "aws_s3_bucket" "codepipeline_new_artifacts_to_manage_state" {
   bucket = "pipeline-new-artifacts-state-management-terraform"
   acl    = "private"
 } 
+
+
+resource "aws_s3_bucket" "testingamitsbucket" {
+  bucket = "pipeline-new-artifacts-state-management-terraform"
+  acl    = "private"
+} 
