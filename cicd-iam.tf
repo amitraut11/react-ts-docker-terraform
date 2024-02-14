@@ -94,7 +94,10 @@ data "aws_iam_policy_document" "tf-cicd-build-policies-terraform" {
                 "ecr:GetLifecyclePolicy",
                 "ecr:GetLifecyclePolicyPreview",
                 "ecr:ListTagsForResource",
-                "ecr:DescribeImageScanFindings"
+                "ecr:DescribeImageScanFindings",
+                "s3:GetObject",
+                "s3:PutObject"
+
             ]
         resources = ["*"]
         effect = "Allow"
