@@ -5,7 +5,7 @@ phases:
     commands:
       - aws ecr get-login-password --region $AWS_DEFAULT_REGION| docker login --username AWS --password-stdin 365235792173.dkr.ecr.us-east-1.amazonaws.com/helloworld
       - COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
-      echo "COMMIT_HASH11: $COMMIT_HASH"
+      - echo "COMMIT_HASH11: $COMMIT_HASH"
       - IMAGE_TAG=${COMMIT_HASH}
       - echo "IMAGE_TAG12: $IMAGE_TAG"
       - REPO_URL=365235792173.dkr.ecr.us-east-1.amazonaws.com/helloworld
