@@ -102,6 +102,7 @@ resource "aws_ecs_service" "demo_app_service" {
   cluster         = aws_ecs_cluster.demo_app_cluster.id
   task_definition = aws_ecs_task_definition.demo_app_task.arn
   launch_type     = "FARGATE"
+  force_new_deployment = true
   desired_count   = 1
 
   load_balancer {
