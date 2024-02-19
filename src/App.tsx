@@ -16,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React from scratch111 
+          Learn React from scratch111 to test new functionlity
         </a>
       </header>
     </div>
